@@ -51,8 +51,8 @@
         <!-- Address, map, hours -->
         <section class="address">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-<div class="row>"
-                <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
+            <div class="row">
+               <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size --> -->
             <div class= "small-6 large-4 columns">
                 <div class="location">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
@@ -99,23 +99,143 @@
                 One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active?
 
                 -->
-                <div class="menu-section" id="NAMEOFSECTION">
-                    <h3>
-                        <a href="#">
+                <div class="row">
+                <div class="menu-section-item small-2 columns" id="breakfast">
+                    <h3>Breakfast
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
+                        <a href="#breakfast">
                             <!-- TODO name of menu section -->
                         </a>
                     </h3>
                 </div>
-
+                <div class="menu-section-item small-2 columns" id="lunch">
+                    <h3>Lunch
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
+                        <a href="#lunch">
+                            <!-- TODO name of menu section -->
+                        </a>
+                    </h3>
+                </div>
+                <div class="menu-section-item small-2 columns" id="dinner">
+                    <h3>Dinner
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
+                        <a href="#dinner">
+                            <!-- TODO name of menu section -->
+                        </a>
+                    </h3>
+                </div>
+                <div class="menu-section-item small-2 columns" id="dessert">
+                    <h3>Dessert
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
+                        <a href="#dessert">
+                            <!-- TODO name of menu section -->
+                        </a>
+                    </h3>
+                </div>
+                <div class="menu-section-item small-2 columns" id="cocktails">
+                    <h3>Cocktails
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
+                        <a href="#cocktails">
+                            <!-- TODO name of menu section -->
+                        </a>
+                    </h3>
+                </div>
+                <div class="menu-section-item small-2 columns" id="wines">
+                    <h3>Wines
+                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
+                        <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
+                        <a href="#wines">
+                            <!-- TODO name of menu section -->
+                        </a>
+                    </h3>
+                </div>
+                </div>
 
             <!-- TODO add a foundation row to wrap around this content -->
+            <div class="row">
                 <div id="menu-section-content" class="menu-section-content">
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
+                        <div class="menu-group medium-6 large-6 colums">
+                            <h4>Raw Bar</h4>
+                                <div class="menu-item">
+                                    <div class="menu-item-dish">malpeque oyster</div>
+                                    <p class="menu-item-ingredients">prince edward island, canada</p>
+                                    <div class="menu-item-price">3</div>
 
-                        <div class="menu-group">
+                                    <div class="menu-item-dish">bluepoint oyster</div>
+                                    <p class="menu-item-ingredients">long island sound</p>
+                                    <div class="menu-item-price">3</div>
+
+                                    <div class="menu-item-dish">seafood coctel</div>
+                                    <p class="menu-item-ingredients">shrimp, avocado, tomato, cucumber, onion</p>
+                                    <div class="menu-item-price">11</div>
+
+                                    <div class="menu-item-dish">raw bass</div>
+                                    <p class="menu-item-ingredients">avocado, lime, guajillo</p>
+                                    <div class="menu-item-price">11</div>
+
+                                    <div class="menu-item-dish">vuelve a la vida</div>
+                                    <p class="menu-item-ingredients">squid, shrimp, salmon, spicy tomato, celery</p>
+                                    <div class="menu-item-price">9</div>
+
+                                    <div class="menu-item-dish">ceviche traditional</div>
+                                    <p class="menu-item-ingredients">avocado, tomato, jalapeño</p>
+                                    <div class="menu-item-price">9</div>
+
+                                    <div class="menu-item-dish">hamachi</div>
+                                    <p class="menu-item-ingredients">“horchata”, orange</p>
+                                    <div class="menu-item-price">11</div>
+
+                                    <div class="menu-item-dish">vegan ceviche</div>
+                                    <p class="menu-item-ingredients">chayote, cauliflower, beet, orange</p>
+                                    <div class="menu-item-price">8</div>
+                                </div>
+                        </div>
+                        <div class="menu-group medium-6 large-6 colums">
                             <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <h4></h4>
+                            <h4>Entrees</h4>
+                                <div class="menu-item">
+                                    <div class="menu-item-dish">carne asada</div>
+                                    <p class="menu-item-ingredients">flank steak, grilled onions, “pico de gallo”</p>
+                                    <div class="menu-item-price">19</div>
 
+                                    <div class="menu-item-dish">grilled hen</div>
+                                    <p class="menu-item-ingredients">cauliflower, pickle red onions, salsa verde </p>
+                                    <div class="menu-item-price">16</div>
+
+                                    <div class="menu-item-dish">lamb en mole</div>
+                                    <p class="menu-item-ingredients">poblano, chayote, tomatoes, raisins</p>
+                                    <div class="menu-item-price">22</div>
+
+                                    <div class="menu-item-dish">blade steak al pastor</div>
+                                    <p class="menu-item-ingredients">charred tomato, radish, onion</p>
+                                    <div class="menu-item-price">22</div>
+
+                                    <div class="menu-item-dish">striped bass</div>
+                                    <p class="menu-item-ingredients">hominy, mushrooms, chard, hoja santa, guajillo</p>
+                                    <div class="menu-item-price">23</div>
+
+                                    <div class="menu-item-dish">salmon veracruz</div>
+                                    <p class="menu-item-ingredients">tomato, onion, peppers, capers, olives</p>
+                                    <div class="menu-item-price">19</div>
+
+                                    <div class="menu-item-dish">herb crusted mahi mahi</div>
+                                    <p class="menu-item-ingredients">salsa negra, pineapple, turnips, scallion</p>
+                                    <div class="menu-item-price">22</div>
+
+                                    <div class="menu-item-dish">grilled shrimp al mojo de ajo</div>
+                                    <p class="menu-item-ingredients">garlic, lime, tomato, tequila, greens, coronas</p>
+                                    <div class="menu-item-price">21</div>
+
+                                    <div class="menu-item-dish">oak grilled filet</div>
+                                    <p class="menu-item-ingredients">“rajas”, pasilla red wine reduction</p>
+                                    <div class="menu-item-price">36</div>
+                                </div>
                             <!-- TODO for each item on the menu, write a div.menu-item. -->
 
                                 <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
@@ -123,8 +243,9 @@
                                 <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
                         </div>
                 </div>
-
+            </div>
         </section>
+
 
         <!-- Social media -->
         <section class="contact">
