@@ -21,7 +21,9 @@ $(function() {
       event.preventDefault();
 
       // Assign the id of the clicked element (this) to a variable named id
-      var  = $( this );
+      var id = $( this ).attr('id');
+      console.log(id);
+
 
       // Remove the class 'is-active' from all menu item headings
       $( '' ).removeClass( '' );
@@ -64,42 +66,42 @@ $(function() {
 
     // TODO #3 Create a function, populateMenu, to add a menu to the DOM
 
-    function populateMenu( json ) {
-      html = '';
+    // function populateMenu( json ) {
+    //   html = '';
 
-      // start a for loop that iterates through json.length
-      // add json.length into this for loop code
-      for( var i = 0; i < ; i++ ){
-        // wrap each section in a menu-group div
-        html += '<div class="menu-group columns small-12 medium-4">';
-        // append inside the menu-group div a h4 with the json section name in it
-        // all the content in this for loop will follow this same model:
-        // put the correct content in between the blank + + signs.
-        html += '<h4>' + json[i].section + '</h4>';
+    //   // start a for loop that iterates through json.length
+    //   // add json.length into this for loop code
+    //   for( var i = 0; i < ; i++ ){
+    //     // wrap each section in a menu-group div
+    //     html += '<div class="menu-group columns small-12 medium-4">';
+    //     // append inside the menu-group div a h4 with the json section name in it
+    //     // all the content in this for loop will follow this same model:
+    //     // put the correct content in between the blank + + signs.
+    //     html += '<h4>' + json[i].section + '</h4>';
 
-        // inside each menu-group section, start a for loop that
-        // prints out each menu-item div
-        for( var j = 0; j < json[i].content.length; j++ ) {
-          // for each menu item in json[i].content, create a menu-item div
-          html += '<div class="menu-item">';
-          // inside each menu-item div, create a div for dish, ingredients, and price
-          // add json[i]content[j].THING where THING is dish, ingredient, price.
-          html += '<div class="menu-item-dish">' + json[i].content[j]. + '</div>';
-          html += '<p class="menu-item-ingredients">' + json[i].content[j]. + '</p>';
-          html += '<div class="menu-item-price">' + json[i].content[j]. + '</div>';
-          html += '</div>';
-        }
+    //     // inside each menu-group section, start a for loop that
+    //     // prints out each menu-item div
+    //     for( var j = 0; j < json[i].content.length; j++ ) {
+    //       // for each menu item in json[i].content, create a menu-item div
+    //       html += '<div class="menu-item">';
+    //       // inside each menu-item div, create a div for dish, ingredients, and price
+    //       // add json[i]content[j].THING where THING is dish, ingredient, price.
+    //       html += '<div class="menu-item-dish">' + json[i].content[j]. + '</div>';
+    //       html += '<p class="menu-item-ingredients">' + json[i].content[j]. + '</p>';
+    //       html += '<div class="menu-item-price">' + json[i].content[j]. + '</div>';
+    //       html += '</div>';
+    //     }
 
-        html += '</div>';
-      }
+    //     html += '</div>';
+    //   }
 
-      // Use `.html` to replace the contents of `.menu-section-content`
-      $( '.menu-section-content' ).html( html );
-    }
+    //   // Use `.html` to replace the contents of `.menu-section-content`
+    //   $( '.menu-section-content' ).html( html );
+    // }
 
 
 
-    // TODO #4 Call getMenu with a menu of your choice and set that menu's
+    // // TODO #4 Call getMenu with a menu of your choice and set that menu's
     // header to active so that a menu is loaded with the page by default
 
 });
