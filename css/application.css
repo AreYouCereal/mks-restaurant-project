@@ -35,7 +35,7 @@ header h1 {
 header .tagline h4 {
     /* TODO make the tagline italic; you'll have to work hard to override Foundation's font-style: normal on all headers! */
     /* TODO add the same text-shadow */
-    font-style: normal;
+    font-style: italic;
     text-shadow: rgba(34,28,18,.75);
 }
 
@@ -45,7 +45,7 @@ header .tagline {
     background: rgba(34, 28, 18,.5);
     /* I added this transparent background bar for you. */
     /* TODO add some padding to give it space around the text */
-    padding: 5px;
+    padding: 10px;
     /* TODO absolutely position the tagline bar at top: 35%. add a width so that it goes all the way across. */
     position: absolute;
     top: 35%;
@@ -82,7 +82,7 @@ section {
 .location,
 .hours {
     /* TODO give these two divs some padding so that they line up with the map */
-    padding: 60px;
+    padding-top: 100px;
 }
 
 .hours-label { /* TODO style these with the appropriate font styles (bold/italic) */ 
@@ -103,14 +103,17 @@ font-style: italic;
     /* TODO give this section a color of #221c12 and a background of #fffdf0. give it some bottom padding so there's space below the text. */
     color: #221c12;
     background-color: #ffdf0;
+    padding-bottom: 5px;
 }
 
 .menu h2 {
     /* TODO make this font size larger than the Foundation default */
+    font-size: 1.875em;
 }
 
 .menu h2, .menu h3, .menu h4 {
     /* TODO give these headers a color of #221c12 */
+    color: #221c12;
 }
 
 
@@ -119,12 +122,24 @@ font-style: italic;
 .menu-section h3 a {
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
     /* TODO give the menu section links a CSS transition so that when you hover them, the color fades in slowly */
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 
 /* TODO on the menu section links, when hovered, make them the same color but 100% opacity instead of 75% (.75) and make the bottom border the same color. */
+.menu-section-item:hover {
+    color: rgba(34, 28, 18, .75);
+    border-bottom: 3px;
+}
 
 /* TODO on the ACTIVE menu section links, make them look the same as hovered ones. How do you know if they are active? */
+
+.menu-item-section:active {
+    color: rgba(34, 28, 18, .75);
+}
 
 .menu-section-content {
     /* TODO give this some space below the menu links */
@@ -133,6 +148,7 @@ font-style: italic;
 
 .menu-item {
     /* TODO give each menu item some bottom margin */
+    margin-bottom: 10px;
 }
 
 /* TODO style the menu-item-dish to be bold */
