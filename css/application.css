@@ -146,19 +146,30 @@ font-style: italic;
 
 .menu-section-content {
     /* TODO give this some space below the menu links */
+    padding-bottom: 10px;
 }
 
 
 .menu-item {
     /* TODO give each menu item some bottom margin */
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* TODO style the menu-item-dish to be bold */
+.menu-item-dish {
+    font-weight: bold;
+}
 
 /* TODO style the menu-item-ingredients to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
+.menu-item-ingredients {
+    font-style: italic;
+}
 
 /* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
+.menu-item-price {
+    font-weight: bold;
+    opacity: 50%;
+}
 
 
 .menu-item-name-no-description {
