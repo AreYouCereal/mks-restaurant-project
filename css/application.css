@@ -82,7 +82,7 @@ section {
 .location,
 .hours {
     /* TODO give these two divs some padding so that they line up with the map */
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .hours-label { /* TODO style these with the appropriate font styles (bold/italic) */ 
@@ -118,6 +118,9 @@ font-style: italic;
 
 
 /* TODO center the text of the h2 and menu-section */
+.menu-section h2 {
+    text-align: center;
+}
 
 .menu-section h3 a {
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
