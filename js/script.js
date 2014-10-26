@@ -53,8 +53,10 @@ $(function() {
 
     function getMenu( course ) {
      // Use `$.getJSON` to get the menu for whatever menu heading was clicked
-     $.getJSON( 'json/menu-' + course + '.json', function( json ) {
-       populateMenu( json );
+     // $.getJSON( 'json/menu-' + course + '.json', function( json ) {
+     //   populateMenu( json );
+       $.getJSON( 'http://mksrestaurantapi.herokuapp.com/menu-' + course + '.json', function( json ) {
+        populateMenu( json );
        // console.log(course);
        // Once you're started with TODO #3, call the populateMenu function here
        // and pass json as the argument
@@ -83,12 +85,12 @@ $(function() {
         // prints out each menu-item div
         for( var j = 0; j < json[i].content.length; j++ ) {
           // for each menu item in json[i].content, create a menu-item div
-          html += '<div class="menu-item clearfix">';
+          html += '<div class="menu-item">';
           // inside each menu-item div, create a div for dish, ingredients, and price
           // add json[i]content[j].THING where THING is dish, ingredient, price.
           html += '<div class="menu-item-dish">' + json[i].content[j].dish + '</div>';
-          html += '<p class="menu-item-ingredients left">' + json[i].content[j].ingredients + '</p>';
-          html += '<div class="menu-item-price left">' + json[i].content[j].price + '</div>';
+          html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredients + '</p>';
+          html += '<div class="menu-item-price">' + json[i].content[j].price + '</div>';
           html += '</div>';
         }
 
