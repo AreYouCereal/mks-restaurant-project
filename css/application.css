@@ -167,8 +167,15 @@ font-style: italic;
 
 /* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
 .menu-item-price {
-    font-weight: bold;
-    opacity: 50%;
+     .menu-item-price {
+     font-weight: bold;
+-    color: .50;
+-    padding-left: 7px;
+-    display: inline;
++    opacity: .50;
++    padding-left: 10px;
++
+ }
 }
 
 
@@ -202,6 +209,15 @@ font-style: italic;
     -webkit-transition: opacity .55s ease-in-out;
 }​
 
-}
++/*Media Query*/
++@media (max-width: 700px) {
++.tagline {display: none;}
++
++}
++@media (max-width: 900px) {
++.map {display: none;}  
+ }
+
+
 
 
